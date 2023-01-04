@@ -97,9 +97,6 @@ html, body {
     color: white;
 }
 @media (max-width:600px) {
-    html, body {
-        
-    }
     .header div {
         margin-left: 120px;
     }
