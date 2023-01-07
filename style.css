@@ -26,6 +26,9 @@ body {
     font-size: 18px;
     line-height: 1.9;
 }
+.carousel-inner {
+    height: 615px;
+}
 .carousel-inner::before {
     content: '';
     position: absolute;
@@ -95,6 +98,9 @@ body {
 @media only screen and (max-width: 767px) {
     .navbar-nav {
         text-align: center;
+    }
+    .carousel-inner {
+        height: 100%;
     }
     .carousel-caption {
         bottom: 125px;
