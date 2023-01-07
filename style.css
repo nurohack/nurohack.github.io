@@ -17,6 +17,9 @@ body {
     height: 99vh;
     min-height: 300px;
 }
+.carousel-item img {
+    padding-top: 100px;
+}
 .carousel-inner img {
     height: auto;
     width: auto;
