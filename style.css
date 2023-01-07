@@ -84,7 +84,8 @@ body {
     color: #000;
 }
 iframe {
-    border-radius: 20px;
+    padding: 20px;
+    border-radius: 10px;
     width: 100%;
     height: 400px;
     filter: invert(100%);
@@ -92,7 +93,7 @@ iframe {
 }
 
 
-@media only screen and (mib-width: 768px) and (max-width: 991px){
+@media only screen and (min-width: 768px) and (max-width: 991px){
     .carousel-caption {
         bottom: 370px;
     }
@@ -111,6 +112,9 @@ iframe {
 @media only screen and (max-width: 767px) {
     .navbar-nav {
         text-align: center;
+    }
+    iframe {
+        width: 100%;
     }
     .carousel-caption {
         bottom: 125px;
