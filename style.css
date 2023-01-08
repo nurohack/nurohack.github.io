@@ -1,147 +1,30 @@
-* {
-    font-family: montserrat;
-}
-body {
-    background: #f1fbff;
-}
-.navbar {
-    background-color: #141414;
-}
-.carousel-caption h4 {
-    letter-spacing: 3px;
-}
-.section-padding {
-    padding: 100px 0;
-}
-.carousel-item {
-    height: 99vh;
-    min-height: 300px;
-}
-.carousel-item img {
-    padding-top: 100px;
-}
-.carousel-inner img {
-    height: auto;
-    width: auto;
-}
-.carousel-caption {
-    bottom: 220px;
-    z-index: 2;
-}
-.carousel-caption h5 {
-    font-size: 45px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-.carousel-caption p {
-    width: 60%;
-    margin: auto;
-    font-size: 18px;
-    line-height: 1.9;
-}
-.carousel-inner::before {
-    content: '';
-    position: absolute;
-    width: 100%;
+html, body {
     height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0,0,0,0.7);
-    z-index: 2;
 }
-.navbar-nav a {
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 500;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.navbar-light .navbar-brand {
-    color: #000;
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-.navbar-light .navbar-brand:focus,
-.navbar-light .navbar-brand:hover {
-    color: #000;
-}
-.navbar-light .navbar-nav .navbar-link {
-    color: #000;
-}
-.w-100 {
-    height: 100vh;
-}
-.services .card-body i {
-    font-size: 50px;
-}
-.team .card-body i {
-    font-size: 20px;
-}
-.portfolio .card {
-    box-shadow: 15px 15px 40px rgba(0,0,0,0.15);
-}
-.team .card {
-    box-shadow: 15px 15px 40px rgba(0,0,0,0.15);
-}
-.socials a {
-    color: #000;
-}
-iframe {
-    padding: 20px;
-    border-radius: 10px;
+.container {
+    position: relative;
+    height: 615px;
     width: 100%;
-    height: 400px;
-    margin: auto;
-}
-.item h3 {
+    background-image: url(yoll3.jpg);
+    background-position: center;
+    background-size: cover;
     padding-left: 20px;
 }
-
-
-@media only screen and (min-width: 768px) and (max-width: 991px){
-    .carousel-caption {
-        bottom: 370px;
-    }
-    .carousel-caption p {
-        width: 100%;
-    }
-    .card {
-        margin-bottom: 30px;
-    }
-    .img-area {
-        width: 100%;
-    }
+.yazi {
+    width: 200px;
 }
-
-
-@media only screen and (max-width: 767px) {
-    .navbar-nav {
-        text-align: center;
-    }
-    iframe {
-        width: 100%;
-    }
-    .carousel-item img {
-        margin-top: 100px;
-    }
-    .carousel-caption {
-        bottom: 125px;
-    }
-    .carousel-caption h5 {
-        font-size: 17px;
-    }
-    .carousel-caption a {
-        padding: 10px 15px;
-    }
-    .carousel-caption p {
-        width: 100%;
-        line-height: 1.6;
-        font-size: 12px;
-    }
-    .about-text {
-        padding-top: 500px;
-    }
-    .card {
-        margin-bottom: 30px;
-    }
+span {
+    color: blue;
+}
+.container h3 {
+    padding-left: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container span {
+    padding-left: 100px;
 }
