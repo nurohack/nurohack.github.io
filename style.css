@@ -1,119 +1,140 @@
-* {
-    font-family: montserrat;
+ul li .active {
+    background-color: #898989;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
 }
-body {
-    background: #f1fbff;
-}
-.section-padding {
-    padding: 100px 0;
-}
-.carousel-item {
-    height: 100vh;
-    min-height: 300px;
-}
-.carousel-caption {
-    bottom: 220px;
-    z-index: 2;
-}
-.carousel-caption h5 {
-    font-size: 45px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-.carousel-caption p {
-    width: 60%;
-    margin: auto;
-    font-size: 18px;
-    line-height: 1.9;
-}
-.carousel-inner::before {
-    content: '';
-    position: absolute;
+.container {
     width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0,0,0,0.7);
-    z-index: 1;
+    height: 835px;
+    margin-top: 120px;
 }
-.navbar-nav a {
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 500;
+.container h3 {
+    padding-left: 60px;
 }
-.navbar-light .navbar-brand {
-    color: #000;
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px;
+.container p {
+    padding-top: 20px;
+    padding-left: 5px;
 }
-.navbar-light .navbar-brand:focus,
-.navbar-light .navbar-brand:hover, {
-    color: #000;
+.card {
+    display: inline-block;
+    margin: 10px;
 }
-.navbar-light .navbar-nav .navbar-link {
-    color: #000;
+.container2 {
+    margin-top: 120px;
 }
-.w-100 {
+.im1 {
+    background-image: url(hack.jpg);
+    height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    margin-top: 120px;
+}
+.h2 {
+    padding-top: 50px;
+}
+.image {
+    margin-top: 120px;
+    width: 100%;
     height: 100vh;
 }
-
-
-.services .card-body i {
-    font-size: 50px;
+.img {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
 }
-.team .card-body i {
-    font-size: 20px;
+.img:hover {
+    text-shadow: 6px 6px 16px black;
 }
-.portfolio .card {
-    box-shadow: 15px 15px 40px rgba(0,0,0,0.15);
+.img1 {
+    background-image: url(hacker1.jpg);
+    background-position: center;
+    background-size: cover;
 }
-.team .card {
-    box-shadow: 15px 15px 40px rgba(0,0,0,0.15);
+.img2 {
+    background-image: url(hacker2.jpg);
+    background-position: center;
+    background-size: cover;
 }
-
-
-
-
-@media only screen and (mib-width: 768px) and (max-width: 991px){
-    .carousel-caption {
-        bottom: 370px;
-    }
-    .carousel-caption p {
-        width: 100%;
-    }
-    .card {
-        margin-bottom: 30px;
-    }
-    .img-area {
-        width: 100%;
-    }
+.img3 {
+    background-image: url(hacker3.jpg);
+    background-position: center;
+    background-size: cover;
 }
-
-
-@media only screen and (max-width: 767px) {
-    .navbar-nav {
-        text-align: center;
-    }
-    .carousel-caption {
-        bottom: 125px;
-    }
-    .carousel-caption h5 {
-        font-size: 17px;
-    }
-    .carousel-caption a {
-        padding: 10px 15px;
-    }
-    .carousel-caption p {
-        width: 100%;
-        line-height: 1.6;
-        font-size: 12px;
-    }
-    .about-text {
-        padding-top: 500px;
-    }
-    .card {
-        margin-bottom: 30px;
+.img4 {
+    background-image: url(hacker4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img5 {
+    background-image: url(hacker5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img6 {
+    background-image: url(hacker6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img7 {
+    background-image: url(hacker7.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img8 {
+    background-image: url(hacker8.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img9 {
+    background-image: url(hacker9.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img10 {
+    background-image: url(hacker10.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img11 {
+    background-image: url(hacker11.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img12 {
+    background-image: url(hacker12.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.a1:hover {
+    background-color: #898989;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.container3 {
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+}
+.box {
+    background-image: url(contac.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+@media (max-width: 600px) {
+    .img {
+        background-position: center;
+        background-size: cover;
+        margin-left: 70px;
+        width: 250px;
+        height: 250px;
     }
 }
