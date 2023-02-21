@@ -92,31 +92,31 @@
 
     <script>
 
-        const boy = prompt('Boyunuz Nechedir ?');
-        const kq = prompt('Neche kiloqramsınız ?');
-        let netice = (kq / (boy * boy)) * 10000;
+        const boy = prompt('Boyunuz Neçədir ?');
+        const kq = prompt('Neçə kiloqramsınız ?');
+        let bmi = (kq / (boy * boy)*10000);
         
 
-        if (kq < 25) {
-            netice = 'Siz, çəki azlığından əziyyət çəkirsiniz.';
-        } else if (kq < 30) {
-            netice = 'Sizin, çəkiniz azdır. Lakin sağlamlıq üçün zərərli deyil.';
-        } else if (kq < 50) {
-            netice = 'Sizin, çəkiniz normaldır. Təbriklər !!!';
-        } else if (kq < 67) {
-            netice = 'Sizin artıq çəkiniz var.';
-        } else if (kq < 78) {
-            netice = 'Siz, 1-ci dərəcəli artıq çəkidən əziyyət çəkirsiniz.';
-        } else if (kq < 80) {
-            netice = 'Siz, 2-ci dərəcəli artıq çəkidən əziyyət çəkirsiniz.';
-        } else if (kq < 87) {
-            netice = 'Siz, 3-cü dərəcəli artıq çəkidən əziyyət çəkirsiniz.';
-        } else if (kq > 90){
-            netice = 'Siz, 4-cü dərəcəli artıq çəkidən əziyyət çəkirsiniz.';
+        if (kq < 18) {
+            bmi = 'Siz, çəki azlığından əziyyət çəkirsiniz.';
+        } else if (kq < 20) {
+            bmi = 'Sizin, çəkiniz azdır. Lakin sağlamlıq üçün zərərli deyil.';
+        } else if (kq < 26) {
+            bmi = 'Sizin, çəkiniz normaldır. Təbriklər !!!';
+        } else if (kq < 28) {
+            bmi = 'Sizin artıq çəkiniz var.';
+        } else if (kq < 31) {
+            bmi = 'Siz, 1-ci dərəcəli artıq çəkidən əziyyət çəkirsiniz.';
+        } else if (kq < 36) {
+            bmi = 'Siz, 2-ci dərəcəli artıq çəkidən əziyyət çəkirsiniz.';
+        } else if (kq < 41) {
+            bmi = 'Siz, 3-cü dərəcəli artıq çəkidən əziyyət çəkirsiniz.';
+        } else if (kq > 41){
+            bmi = 'Siz, 4-cü dərəcəli artıq çəkidən əziyyət çəkirsiniz.';
         }
 
 
-        document.getElementById('else').innerHTML = netice;
+        document.getElementById('else').innerHTML = bmi;
     </script>
 </body>
 </html>
