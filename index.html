@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Navbar Project</title>
     <style>
         * {
             margin: 0;
@@ -16,17 +17,11 @@
             display: flex;
             flex-wrap: wrap;
         }
-        header {
-            width: 100%;
-            height: 100px;
-            background-color: rebeccapurple;
-            color: white;
-            text-align: center;
-        }
         header h1 {
             padding-top: 30px;
         }
         .yazilar {
+            margin-top: 10%;
             width: 100%;
             height: auto;
             color: blue;
@@ -37,8 +32,8 @@
             font-size: 18px;
         }
         .netice {
-            width: 100%;
-            height: 160px;
+            width: auto;
+            height: 150px;
             background-color: red;
             margin: 3%;
             justify-content: center;
@@ -60,10 +55,20 @@
     </style>
 </head>
 <body>
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm fixed-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand"><h1>BMİ Calculyator</h1> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+        </div>
+    </nav>
+
+
+
+
     <div class="container">
-        <header>
-            <h1>BMI calculyator</h1>
-        </header>
         <div class="yazilar">
             <p>
                 Bədən kütlesi indeksi (BKİ) aşağıdakı düsturla hesablanır. <br>
@@ -71,16 +76,24 @@
                 <br> <br>
                 Ümumdünya Səhiyyə Təşkilatı (ÜST) BKİ-nin 25-ə bərabər və ya <br> yuxarı olmasını artıq çəki, BKİ-nin 30-a bərabər və ya yuxarı <br> olmasını isə piylənmə kimi təyin edir. Dünyada 1.4 milyarddan çox <br> insan  artıq çəkilidir və yarım milyarddan çox insan piylənmədən əziyyət çəkir.
             </p>
+            <div class="netice">
+                <h1 id="else"></h1>
+            </div>
         </div>
 
 
-        <div class="netice">
-            <h1 id="else"></h1>
-        </div>
-        <footer>
-            <h3>Design by Nurlan Aliyev &copy; 2023</h3>
+        <footer class="navbar bg-dark navbar-dark navbar-expand-sm fixed-bottom">
+            <p class="text-white mx-auto my-auto">Designed by &copy; Nurlan Aliyev 2023</p>
         </footer>
-    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
 
 
 
@@ -94,24 +107,24 @@
 
         const boy = prompt('Boyunuz Neçədir ?');
         const kq = prompt('Neçə kiloqramsınız ?');
-        let bmi = (kq / (boy * boy)*10000);
+        let bmi = (kq / (boy * boy) * 10000);
         
 
-        if (kq < 18) {
+        if (bmi < 18) {
             bmi = 'Siz, çəki azlığından əziyyət çəkirsiniz.';
-        } else if (kq < 20) {
+        } else if (bmi < 20) {
             bmi = 'Sizin, çəkiniz azdır. Lakin sağlamlıq üçün zərərli deyil.';
-        } else if (kq < 26) {
+        } else if (bmi < 26) {
             bmi = 'Sizin, çəkiniz normaldır. Təbriklər !!!';
-        } else if (kq < 28) {
+        } else if (bmi < 28) {
             bmi = 'Sizin artıq çəkiniz var.';
-        } else if (kq < 31) {
+        } else if (bmi < 31) {
             bmi = 'Siz, 1-ci dərəcəli artıq çəkidən əziyyət çəkirsiniz.';
-        } else if (kq < 36) {
+        } else if (bmi < 36) {
             bmi = 'Siz, 2-ci dərəcəli artıq çəkidən əziyyət çəkirsiniz.';
-        } else if (kq < 41) {
+        } else if (bmi < 41) {
             bmi = 'Siz, 3-cü dərəcəli artıq çəkidən əziyyət çəkirsiniz.';
-        } else if (kq > 41){
+        } else if (bmi > 41) {
             bmi = 'Siz, 4-cü dərəcəli artıq çəkidən əziyyət çəkirsiniz.';
         }
 
