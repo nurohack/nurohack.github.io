@@ -1,3 +1,49 @@
+header {
+	background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
+	text-align: center;
+    margin-top: 100px;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+}
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient( 135deg, hsla(199, 100%, 51%, 0.412) 10%, hsla(71, 98%, 51%, 0.42) 100%);
+	
+}
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 80px;
+	margin-bottom: 30px;
+}
+
+h3, p {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 30px;
+}
+
+button {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #333;
+	background: #fff;
+	margin-bottom: 50px;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+button:hover{
+	cursor: pointer;
+}
 body {
     background: #222327;
 }
@@ -202,17 +248,18 @@ footer {
     font-size: 18px;
     margin-right: 15px;
 }
-.card {
+.card{
     width: 300px;
-}
+ }
 @media (max-width: 767px) {
     .single-box {
     margin-bottom: 50px;
     }
-    .card {
-        width: 100px;
+    .card{
+        width: 400px;
     }
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
     .single-box {
     margin-bottom: 50px;
@@ -293,9 +340,6 @@ p
   border-radius:16px;
   overflow:hidden;
 }
-/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
-
-/* Top Half of card, image. */
 
 .property-image
 {
@@ -312,7 +356,6 @@ p
   background-repeat:no-repeat;
 }
 
-/* Bottom Card Section */
 
 .property-description
 {
@@ -327,7 +370,7 @@ p
   text-align:center;
 }
 
-/* Social Icons */
+
 
 .property-social-icons
 {
@@ -342,7 +385,7 @@ p
   transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-/* Property Cards Hover States */
+
 
 .property-card:hover .property-description
 {
@@ -371,30 +414,18 @@ p
 }
 .nuro2 .card {
     margin: 10px;
-    position: relative;
     background-color: #222327;
 }
 .nuro2 img {
-    width: 270px;
+    width: 400px;
     height: 300px;
 }
-.card-body > p {
+.card-body > p , h5{
     color: #fff;
-}
-.collapse ul li a {
-    text-align: center;
-}
-.collapse ul li a:hover {
-    text-align: center;
-    color: white;
-    background-color: black;
 }
 *{
     margin: 0;
     padding: 0;
-  }
-  .amgk {
-    margin-top: 13px;
   }
   .img{
     width: 100%;
