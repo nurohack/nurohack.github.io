@@ -251,22 +251,26 @@ footer {
 .card{
     width: 300px;
  }
-@media (max-width: 767px) {
-    .single-box {
-    margin-bottom: 50px;
-    }
-    .card{
-        width: 400px;
-    }
-}
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 767px) and (max-width: 991px) {
     .single-box {
     margin-bottom: 50px;
 }
     iframe{
         width: 450px;
     }
+    .geoscience{
+        font-size: 20px;
+    }
+    .single-box {
+        margin-bottom: 50px;
+        }
+        .card{
+            width: 300px;
+        }
+        .section-header{
+            font-size: 10px;
+        }
 }
     section{
     height: calc(100% - 100px);
@@ -437,6 +441,30 @@ p
     transform: translateY(14%);
   }
 
-  .buton{
-    margin-bottom: 420px;
-  }
+        .buton{
+            margin-bottom: 420px;
+         }
+        .hero{
+            background-image: url(sailboat.jpg);
+            width: 100%;
+            background-size: cover;
+            background-attachment: fixed;
+            z-index: 2;
+            position: relative;
+        }
+        .hero::after{
+            content: "";
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(21, 20, 31, 0.8);
+            position: absolute;
+            z-index: -1;
+        }
+        .btn{
+            border-radius: 0;
+        }
+        .frontend{
+            padding: 120px 0;
+        }
