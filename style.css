@@ -521,3 +521,6 @@ p
        .footer h6 {
         letter-spacing: 2px;
        }
+       .card button {
+            margin-left: 50px;
+       }
