@@ -271,6 +271,15 @@ footer {
         .section-header{
             font-size: 10px;
         }
+        .about-image{
+            margin: 0;
+        }
+        .aspa{
+            margin: 0;
+        }
+        .sekilhereket{
+            justify-content: none;
+        }
 }
     section{
     height: calc(100% - 100px);
@@ -290,7 +299,9 @@ iframe{
 }
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
  
-
+.sekilhereket{
+    justify-content: center;
+}
 body
 {
   font-family: 'RobotoDraft', 'Roboto', sans-serif;
@@ -522,4 +533,7 @@ p
        .buton2:hover::after {
         transform: scaleX(1.4) scaleY(1.6);
         opacity: 0;
+       }
+       .aspa {
+        margin: 50px;
        }
