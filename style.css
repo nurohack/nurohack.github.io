@@ -485,7 +485,7 @@ p
        }
        
        .buton2::after {
-        content: "More";
+        content: "";
         display: inline-block;
         height: 100%;
         width: 100%;
